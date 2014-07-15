@@ -1,0 +1,15 @@
+{
+    "code": "yourcode",
+    "name" : "Enter a Name",
+    "description" : "Enter a description.",
+    "dataset" : "pilrhealth:location_ref_app:location",
+    "schema" : "1",
+    "type" : "r:vega",
+    "package_url": "http://www.github.com/tdschenk/dashtemplate",
+    "package_function": "nameyourfunction",
+    "filter_params" : [
+        "participant",
+        "group",
+		"date"
+    ]
+}
