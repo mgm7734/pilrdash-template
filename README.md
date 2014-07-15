@@ -35,8 +35,12 @@ Access Code
 When testing your function locally, pilr_dashboard_panel needs to read in your PiLR API
 consumer key from a secure file. Create a text file named "pilrsecret.txt" under the folder
 "R" in your function's package. Paste your access code in this file, followed by a blank line. 
-Our template provides a .gitignore file which causes pilrsecret.txt to not be committed to a repo.  
+Our template provides a .gitignore file which causes "pilrsecret.txt" to not be committed to a repo.  
 
 Return Types
 ------------
-Currently only [Vega](http://trifacta.github.io/vega/) return types are supported. A common package for generating Vega visuals in R is [ggvis](http://ggvis.rstudio.com/).
+Currently only [Vega](http://trifacta.github.io/vega/) return types are supported. A common package for generating Vega visuals in R is [ggvis](http://ggvis.rstudio.com/).  
+
+Importing Dashboard Definition
+------------------------------
+To import your custom dashboard function into PiLR, you will need to update the parameters in the provided "dash-definition.json" document. 
