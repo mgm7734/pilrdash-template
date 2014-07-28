@@ -41,6 +41,17 @@ Return Types
 ------------
 Currently only [Vega](http://trifacta.github.io/vega/) return types are supported. A common package for generating Vega visuals in R is [ggvis](http://ggvis.rstudio.com/).  
 
+Webhooks
+--------
+In order to allow OpenCPU to update your package each time you push changes to GitHub, you will need to setup a
+webhook. To do so, go to your package on GitHub and click on Settings->Webhooks & Services on the sidebar. To read 
+more about OpenCPU and webhooks, see the bottom of [this page](https://www.opencpu.org/api.html).  
+
 Importing Dashboard Definition
 ------------------------------
-To import your custom dashboard function into PiLR, you will need to update the parameters in the provided "dash-definition.json" document. 
+To import your custom dashboard function into PiLR, you will need to update the parameters in the provided "dash-definition.json" document.   
+
+Private Repo?
+-------------
+If you wish for your GitHub repo to be private, you will need to add the Github user "pilrhealth" (without quotes)
+as a collaborator. This will allow PiLR to see and use your package.
