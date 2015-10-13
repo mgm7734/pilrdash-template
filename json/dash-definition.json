@@ -1,7 +1,7 @@
 {
-  "code": "<any-code>",
+  "code": "mgm-dash",
   "version": 1,
-  "name" : "<Name your dashboard>",
+  "name" : "Mark's Most Dashing Board",
   "description" : "<A brief description of what your dashboard does>",
   "definition_type": "dashboard",
   "dashboard_type" : "r:vega",
@@ -10,19 +10,14 @@
     "save_request": 1,
     "save_response": 1,
     "delete_if_successful": 0,
-    "package_url": "<link-to-github-repo>",
-    "package_function": "<your-functions-name>",
+    "package_url": "https://github.com/mgm7734/pilrdash-template",
+    "package_function": "nameyourfunction",
     "resource_path": "/github/MeiResearchLtd/pilr.dash.r/R/pilr_dashboard_panel",
     "input_datasets": [
 	  {
-		"code": "<pilrhealth:sample:location>",
+	        "code": "pilrhealth:mobile:survey_data",
 		"version": 1,
-		"mapping": "<survey>"
-	  },
-	  {
-		"code": "<pilrhealth:sample:activity>",
-		"version": 1,
-		"mapping": "<dosage>"
+		"mapping": "survey"
 	  }
     ],
     "input_file_types": [],
