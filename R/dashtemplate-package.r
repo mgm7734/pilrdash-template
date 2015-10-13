@@ -10,5 +10,7 @@
 ## Choose a name for your function and write the code for it in place of plot(1:10)
 #' @export
 nameyourfunction <- function(data, params, ...) {
-  plot(1:10)
+  data <- data.frame(x=c(1,2,3),y=c(1,2,3))
+  data %>%
+    ggvis(~x, ~y)
 }
