@@ -1,15 +1,41 @@
 {
-    "code": "yourcode",
-    "name" : "Enter a Name",
-    "description" : "Enter a description.",
-    "dataset" : "pilrhealth:location_ref_app:location",
-    "schema" : "1",
-    "type" : "r:vega",
-    "package_url": "http://www.github.com/tdschenk/dashtemplate",
-    "package_function": "nameyourfunction",
-    "filter_params" : [
-        "participant",
-        "group",
-		"date"
+  "code": "<any-code>",
+  "version": 1,
+  "name" : "<Name your dashboard>",
+  "description" : "<A brief description of what your dashboard does>",
+  "definition_type": "dashboard",
+  "dashboard_type" : "r:vega",
+  "runner": {
+    "clazz": "com.pilrhealth.tools.processing_with_r.RProcOpenCPUJobRunner",
+    "save_request": 1,
+    "save_response": 1,
+    "delete_if_successful": 0,
+    "package_url": "<link-to-github-repo>",
+    "package_function": "<your-functions-name>",
+    "resource_path": "/github/MeiResearchLtd/pilr.dash.r/R/pilr_dashboard_panel",
+    "input_datasets": [
+	  {
+		"code": "<pilrhealth:sample:location>",
+		"version": 1,
+		"mapping": "<survey>"
+	  },
+	  {
+		"code": "<pilrhealth:sample:activity>",
+		"version": 1,
+		"mapping": "<dosage>"
+	  }
+    ],
+    "input_file_types": [],
+    "input_settings": [],
+    "filter_params": [
+      "participant",
+      "group",
+      "date_range"
+    ],
+    "input_params": [],
+    "output_datasets": [
+    ],
+    "output_file_types": [
     ]
+  }
 }
