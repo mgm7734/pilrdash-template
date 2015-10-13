@@ -1,4 +1,4 @@
-Package: pilrdash-template
+Package: pilrdashtemplate
 Title: What the package does (short line)
 Version: 0.1
 Authors@R: "First Last <first.last@example.com> [aut, cre]"

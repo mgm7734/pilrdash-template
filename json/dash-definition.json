@@ -10,7 +10,7 @@
     "save_request": 1,
     "save_response": 1,
     "delete_if_successful": 0,
-    "package_url": "https://github.com/mgm7734/pilrdash-template",
+    "package_url": "https://github.com/mgm7734/pilrdashtemplate",
     "package_function": "nameyourfunction",
     "resource_path": "/github/MeiResearchLtd/pilr.dash.r/R/pilr_dashboard_panel",
     "input_datasets": [
